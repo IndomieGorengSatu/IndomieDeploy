@@ -1,7 +1,7 @@
 {
-  "name": "Kay-Userbot",
-  "description": "USERBOT KHUSUS YANG DIGUNAKAN UNTUK BERSENANG-SENANG DI TELEGRAM.",
-  "logo": "https://telegra.ph/file/d257ba98dbd40a7f6fa04.jpg",
+  "name": "IndomieUserbot",
+  "description": "[IndomieUserbot] USERBOT YANG DIGUNAKAN UNTUK ORANG CAPER DAN MENEBAR PESONA HEKER DI TELEGRAM.",
+  "logo": "https://telegra.ph/file/3aeb0f9581ffb876e8bc5.png",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Kayzyu/Kayzu-Ubot/Kayzu-Ubot",
-  "telegram": "https://t.me/Kayzuuuuu",
-  "success_url": "https://t.me/kayzuchannel",
+  "repository": "https://github.com/indomiegorengsatu/IndomieUserbot/IndomieUserbot",
+  "telegram": "https://t.me/IndomieGenetik",
+  "success_url": "https://t.me/IndomieProject",
   "stack": "container",
   "env": {
     "API_KEY": {
@@ -22,8 +22,8 @@
       "description": "Dapatkan Api Hash Di Web my.telegram.org",
       "required": true
     },
-     "STRING_SESSION": {
-      "description": "Dapatkan String Session di termux caranya ada di repo, jika tidak tau reponya tanya ke @IDnyaKosong di telegram",
+     "STRING": {
+      "description": "Dapatkan String Session di bot @IndomieStringBot, jika masih tidak paham gimana cara ngambil nya, mending gausa bikin bot anjing.",
       "required": true
     },
     "HEROKU_APP_NAME": {
@@ -32,19 +32,21 @@
     },
     "HEROKU_API_KEY": {
       "description": "Heroku API KEY mu, dapatkan dari web 'https://dashboard.heroku.com/account'",
-      "value": "Check Di Heroku Dashboard Mu",
       "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bikin bot tokennya dulu tolol, bikinnya tu di @botfather trus salin tokennya kesini.",
+      "required": false
+    },
+    "BOT_USERNAME": {
+      "description": "id username bot mu blok.",
+      "required": false
     },
     "BOTLOG_CHATID": {
-      "description": "Buatlah Sebuah Grup Publik Lalu Masukkan Bot @MissRose_Bot Ke Grup Mu, Setelah itu Ketik /id. Nanti akan muncul ID seperti ini Contoh : -1001234567890",
-      "required": true
-    },
-    "PM_AUTO_BAN": {
-      "description": "Pengalihan Fitur Larangan Otomatis PM. atau /skip",
-      "value": "False",
-      "required": true
+      "description": "Bikin Grup Publik Lalu Invite Bot @MissRose_Bot Ke Grup Lo, Trus Ketik /id. Ntr bakal muncul ID seperti ini Contoh : -1001681347xxx",
+      "required": false
     }
-  },
+ },
   "addons": [
     {
       "plan": "heroku-postgresql",
