@@ -1,19 +1,23 @@
-# Using Python Slim-Buster
-FROM kyyex/kyy-userbot:busterv2
+FROM indomie/indomie:buster
 #━━━━━ Userbot Telegram ━━━━━
-#━━━━━ By Kayzu-Ubot ━━━━━
+#━━━━━ By IndomieUserbot ━━━━━
 
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install ffmpeg -y
-RUN git clone -b Kayzu-Ubot https://github.com/Kayzyu/Kayzu-Ubot /root/userbot
-RUN mkdir /root/userbot/.bin
-RUN pip install --upgrade pip setuptools
-WORKDIR /root/userbot
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends \
+    curl \
+    git \
+    ffmpeg
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash - && \
+    apt-get install -y nodejs && \
+    npm i -g npm
+RUN git clone -b IndomieUserbot https://github.com/IndomieGorengSatu/IndomieUserbot /home/IndomieUserbot/ \
+    && chmod 777 /home/IndomieUserbot \
+    && mkdir /home/IndomieUserbot/bin/
+WORKDIR /home/IndomieUserbot/
+COPY ./sample_config.env ./config.env* /home/IndomieUserbot/
 
 #Install python requirements
-RUN pip3 install -r https://raw.githubusercontent.com/Kayzyu/Kayzu-Ubot/Kayzu-Ubot/requirements.txt
-
-EXPOSE 80 443
+RUN pip install -r requirements.txt
 
 # Finalization
 CMD ["python3", "-m", "userbot"]
