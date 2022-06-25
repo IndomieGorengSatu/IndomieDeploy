@@ -8,7 +8,7 @@
     "plugin",
     "modular"
   ],
-  "repository": "https://github.com/IndomieGorengSatu/IndomieUserbot",
+  "repository": "https://github.com/IndomieGorengSatu/IndomieUserbot/IndomieUserbot",
   "telegram": "https://t.me/IndomieGenetik",
   "success_url": "https://t.me/IndomieProject",
   "stack": "heroku-22",
