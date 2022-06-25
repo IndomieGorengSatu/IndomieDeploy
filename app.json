@@ -6,13 +6,12 @@
     "telegram",
     "userbot",
     "plugin",
-    "modular",
-    "productivity"
+    "modular"
   ],
-  "repository": "https://github.com/indomiegorengsatu/IndomieUserbot/IndomieUserbot",
+  "repository": "https://github.com/IndomieGorengSatu/IndomieUserbot",
   "telegram": "https://t.me/IndomieGenetik",
   "success_url": "https://t.me/IndomieProject",
-  "stack": "container",
+  "stack": "heroku-22",
   "env": {
     "API_KEY": {
       "description": "Dapatkan Api Key di web my.telegram.org",
