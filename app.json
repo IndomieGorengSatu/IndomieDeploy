@@ -2,12 +2,7 @@
   "name": "IndomieUserbot",
   "description": "INDOMIE USERBOT YANG DIGUNAKAN UNTUK ORANG CAPER DAN MENEBAR PESONA HEKER DI TELEGRAM.",
   "logo": "https://telegra.ph/file/3aeb0f9581ffb876e8bc5.png",
-  "keywords": [
-    "telegram",
-    "userbot",
-    "plugin",
-    "modular"
-  ],
+  "keywords": ["telegram","userbot","plugin","modular"],
   "repository": "https://github.com/IndomieGorengSatu/IndomieUserbot/IndomieUserbot",
   "stack": "container",
   "env": {
